@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+
+
+
+.container {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* Header Section */
+header
+
+/* لو في اي حاجه مكتوبه في الهيدر اديها اللون */
+    {
+    background-color: #eee;
+    border-bottom: 4px solid #222;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+header .container
+
+/* الكونتينر جواه اللوجو والناف بار */
+    {
+    /*الصورة والناف حطهم جنب بعض */
+    display: flex;
+    /*حط الصورة ف الاول والناف في الاخر  */
+    justify-content: space-between;
+    /* حطهم في نص الهيدر علي خط واحد */
+    align-items: center;
+
+}
+
+
+
+
+
+
+header .container .logo {
+    /* هنا الديف بتاع الصورة بس ارتفاعه 70 بيكسل */
+    height: 70px;
+}
+
+
+
+header .container .logo img {
+    /* هنا ارتفاع الصورة كامل وعرضها180 عشان تتحط ف الديف */
+    height: 100%;
+    width: 180px;
+}
+
+
+
+
+header .container nav ul {
+    /* هنا بتقوله حط الناف بار جنب بعضه */
+    display: flex;
+    /* هنا بتقوله مش عاوز نقط جنب كل ليست */
+    list-style-type: none;
+}
+
+header .container nav ul li {
+    /* هنا بتتخكم في كل ليست لوحدها ف عاوز كل ليست تروح يمين المسافة دي عشان توسع ما بينهم */
+    margin-right: 35px;
+
+
+}
+
+
+
+header .container nav ul li:last-child
+
+/* هنا بتقوله اخر عنصر ف الليست متخليش جنبه اي ازاحه وبالتالي هتعمل ترحيل اوتماتك لكله */
+    {
+    margin-right: 0px;
+}
+
+
+
+
+
+
+header .container nav ul li a
+
+/* هنا بتتحكم في اللينكات بس  */
+    {
+    text-decoration: none;
+    font-size: 20px;
+    color: #4b4957;
+}
+
+
+.bgc {
+    background-color: cornflowerblue;
+}
+
+
+
+
+.bc {
+    color: cornflowerblue;
+}
+
+.sc {
+    color: white;
+}
+
+
+
+
+header .container nav ul li a.active
+
+/* هنا بتقوله الصفحة اللي انت واقف فيها اديها لون والاكتيف دا انا عامله بكلاس يعني كأنه ديف يعني واقف ف الانديكس اديله اللون دا */
+    {
+    color: cornflowerblue;
+}
+
+
+
+
+header .container nav ul li a:hover
+
+/* هنا بتقوله لو شاورت ع اللينك غير لونه كدا */
+    {
+    color: cornflowerblue;
+}
+
+
+
+
+/* start fold section  */
+#fold {
+    background-image: url(../images/bg1.jpg);
+    height: 500px;
+}
+
+#fold .container {
+    display: flex;
+    flex-direction: column;
+    /* هنا بتقوله حط الكلام في نص السطر */
+    align-items: center;
+    /* هنا بتقوله حط الكلام في نص الديف */
+    justify-content: center;
+    /* هنا بتقوله خلي الديف طوله بطول الكلاس بتاع الفولد */
+    height: 100%;
+}
+
+#fold .container h1 {
+    font-size: 55px;
+    position: relative;
+    animation-name: leftToRight;
+    animation-duration: 1.5s;
+}
+
+#fold .container p {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    animation-name: righttoleft;
+    animation-duration: 1.5s;
+
+}
+
+
+
+
+
+
+/* start about us */
+
+
+.head-section {
+    text-align: center;
+    padding: 25px;
+}
+
+.head-section h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+
+
+
+
+#about-us .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+
+#about-us .container .left {
+    flex: 3;
+
+}
+
+
+#about-us .container .left h3 {
+    font-size: 25px;
+}
+
+
+
+#about-us .container .right {
+    flex: 2;
+
+
+}
+
+
+
+#about-us .container .right img {
+    max-width: 100%;
+    border: 5px solid #ccc;
+}
+
+
+/* our services */
+#services .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-wrap: wrap;
+}
+
+#services .container .area {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#services .container .area .area-img {
+    /* هنا بتقوله حتي لو الصورة كبرت متطلعهاش بره الحدود */
+    overflow: hidden;
+}
+
+
+
+#services .container .area .area-img img {
+    max-width: 100%;
+    transition: all .4s linear;
+}
+
+#services .container .area .area-img img:hover {
+    /* هنا بتقوله قلل لاوباسيتي عشان عملنا هافر */
+    opacity: .5;
+    /* هنا الصورة بتكبر من محور اكس و واي */
+    transform: scale(1.3, 1.3);
+}
+
+
+#services .container .area .area-content h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+#services .container .area .area-content .area-btn {
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    background-color: rgba(2, 2, 2, .5);
+    color: white;
+    cursor: pointer;
+}
+
+#services .container .area .area-content .area-btn:hover {
+    color: black;
+    background-color: white;
+    transition: all .5s linear;
+
+}
+
+/* contact us */
+#contact-us .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-us .container form {
+    width: 70%;
+    padding: 40px;
+}
+
+#contact-us .container form label {
+    display: block;
+    margin: 10px;
+}
+
+#contact-us .container form .form-group input,
+#contact-us .container form .form-group textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px 15px;
+}
+
+/* start footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #4b4957;
+    color: #fff;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* inner pages  about us*/
+#fold-inner
+{
+    height:  500px;
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;
+    position: relative;
+   
+    
+
+ }
+
+ #about-us-page .container
+ {
+    padding: 15px;
+}
+
+#about-us-page .container h2
+{
+    font-size: 40px;
+}
+
+
+#about-us-page .container p
+{
+    font-size: 20px;
+}
+
+
+#strategy .container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#strategy .container .about
+{
+    text-align: center;
+    margin: 50px 20px;
+    position: relative;
+    animation-name: downtoup;
+    animation-duration: 1.5s;
+}
+
+#strategy .container .about .about-img img
+{
+max-width: 100%;
+border-radius: 50%;
+border: 1px solid black;
+width: 250px;
+}
+
+#strategy .container .about .about-content h3
+{
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+
+
+
+
+
+/* start contact us page */
+.contact-container
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+  .contact-area
+{
+    width: 30%;
+    padding: 50px 20px;
+    border: 2px solid #222;
+    margin: 15px;
+    position: relative;
+    animation-name: toptobottom  ;
+    animation-duration: 2s;
+ }
+
+.contact-container .contact-area p
+{
+    margin: 20px;
+    
+}
+
+.contact-container .contact-area p:first-child
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.contact-container .contact-area p:last-child
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+/* هنا عملت زي فانكشن استخدمها بحيث انها تيجي من الشمال لليمين  */
+
+@keyframes leftToRight {
+    0% {
+        left: -1500px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
+}
+
+
+@keyframes righttoleft {
+    0% {
+        left: 1500px;
+    }
+
+    100% {
+        left: 0px;
+    }
+
+}
+
+
+@keyframes downtoup {
+    0% {
+        bottom:-1500px;
+    }
+
+    100% {
+        bottom: 0px;
+    }
+
+}
+
+@keyframes toptobottom {
+    0% {
+        top:1000px;
+    }
+
+    100% {
+        top: 0px;
+    }
+
+}

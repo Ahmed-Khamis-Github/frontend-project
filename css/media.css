@@ -1,0 +1,140 @@
+@media screen and (min-width:768px) and (max-width:768px)
+{
+    #services .container .area    {
+        width: 50%;
+    }
+}
+
+
+
+
+@media screen and (max-width:768px)
+{
+
+header .container
+{
+    flex-direction: column;
+}
+
+
+#fold
+{
+    height: 350px;
+}
+
+
+#fold .container h1
+{
+    font-size: 25px;
+    
+}
+
+#fold .container p
+{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/* about us */
+#about-us .container
+{
+    flex-direction: column;
+}
+
+#about-us .container .right
+{
+     padding: 15px 10px;
+}
+
+#about-us .container .left
+{
+    text-align: center;
+
+}
+/* services */
+#services .container 
+{
+flex-direction: column;
+
+ }
+ #services .container .area
+ {
+    width: 100%;
+    margin-bottom: 10px;
+ }
+
+ #fold-inner
+ {
+     height:  150px;
+    
+      
+ 
+ }
+ #about-us-page .container
+ {
+    text-align: center;
+ }
+
+ #about-us-page .container h2
+ {
+     font-size: 20px;
+ }
+ 
+ 
+ #about-us-page .container p
+ {
+     font-size: 13px;
+ }
+
+
+
+#strategy .container
+{
+    flex-direction: column;
+}
+
+.contact-container
+{
+    flex-direction: column;
+}
+
+#strategy .container .about
+{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start contact us */
+.contact-container
+{
+    flex-direction: column;
+  
+     
+}
+.contact-area
+{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+
+
+}
+
+
+
+
+
